@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
-  --fondo-color: rgb(181, 181, 181);
+  --fondo-color: rgba(199, 208, 217, 0.927);
 }
 
 * {
@@ -38,7 +38,7 @@ body {
   margin-top: 24px;
   padding: 14px 32px 14px 16px;
   border-radius: 4px 0 0 4px;
-  border: 2px solid rgba(255, 118, 20, 1);
+  border: 2px solid #c1c1c1;
   outline: none;
   width: 320px;
   background: transparent;
@@ -53,11 +53,19 @@ body {
   border-radius: 0 4px 4px 0;
   cursor: pointer;
   outline: none;
+  /*
   background: linear-gradient(
     90deg,
     rgba(255, 118, 20, 1) 0%,
     rgba(255, 84, 17, 1) 100%
     );
+  */
+
+  background: linear-gradient(
+    90deg,
+    #c1c1c1 0%,
+    #747474 100%
+  );
   text-transform: capitalize;
   color: #fff;
   
@@ -73,7 +81,7 @@ body {
   background: linear-gradient(
     90deg,
     rgba(255, 118, 20, 1) 0%,
-    rgba(255, 84, 17, 1) 100%
+    rgb(206, 58, 0) 100%
   );
   
   border-radius: 5px;
@@ -103,3 +111,26 @@ body {
   width: 10%;
   padding: 2px;
 } 
+
+.todo:nth-child(4n+3) {
+  background: linear-gradient(
+    90deg,
+    #007dff 0%,
+    #002559 100%
+  );
+}
+
+.todo:nth-child(4n+1) {
+  background: linear-gradient(
+    90deg,
+    #3eb331 0%,
+    #0b550b 100%
+  );
+}
+.todo:nth-child(4n+4) {
+  background: linear-gradient(
+    90deg,
+    #d11d1d 0%,
+    #550b0b 100%
+  );
+}
